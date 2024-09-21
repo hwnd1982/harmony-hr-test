@@ -41,10 +41,10 @@ export function Tabs({activeIndex, setActiveIndex}: TabsProps) {
           </SwiperSlide>
         ))}
         <SwiperSlide
-          className="w-auto flex-grow"
+          className="[&.swiper-slide]:w-auto flex-grow"
           onClick={() => {setActiveIndex(9)}}
           >
-            <Link href="#" className={cn('flex w-full text-sm font-medium justify-between px-2 py-4 transition bg-blue rounded-t-lg', activeIndex === 9 && "bg-white")}>
+            <Link href="#" className={cn('flex w-full text-sm font-medium items-center justify-between px-4 py-4 transition bg-blue rounded-t-lg', activeIndex === 9 && "bg-white")}>
               <span>More</span>
               <ChevronDown className='w-4 h-4' />
               </Link>
