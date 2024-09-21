@@ -38,7 +38,7 @@ export default function Dashboard() {
 
         <div className="md: -mt-3.5">
           <div className="container">
-            <div className="max-w-[1220px] mx-auto grid grid-cols-[225px_1fr] gap-6">
+            <div className="max-w-[1300px] mx-auto grid grid-cols-[225px_1fr] gap-6">
               <aside className="grid gap-4 relative z-20">
                 <Card>
                   <CardContent className="flex flex-col gap-4">

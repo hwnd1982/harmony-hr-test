@@ -3,6 +3,7 @@ import 'swiper/css';
 import { Dispatch, SetStateAction } from 'react'
 import Link from 'next/link';
 import { cn } from '@/shared/lib';
+import { ChevronDown } from 'lucide-react';
 
 const list = [
   {title: 'Personal'},
@@ -14,7 +15,6 @@ const list = [
   {title: 'Benefits'},
   {title: 'Training'},
   {title: 'Assets'},
-  {title: 'More'},
 ];
 
 export type TabsProps = {
@@ -40,6 +40,15 @@ export function Tabs({activeIndex, setActiveIndex}: TabsProps) {
             <Link href="#" className={cn('flex text-sm font-medium justify-center py-4 w-[90px] transition bg-blue rounded-t-lg', activeIndex === index && "bg-white")}>{title}</Link>
           </SwiperSlide>
         ))}
+        <SwiperSlide
+          className="w-auto flex-grow"
+          onClick={() => {setActiveIndex(9)}}
+          >
+            <Link href="#" className={cn('flex w-full text-sm font-medium justify-between px-2 py-4 transition bg-blue rounded-t-lg', activeIndex === 9 && "bg-white")}>
+              <span>More</span>
+              <ChevronDown className='w-4 h-4' />
+              </Link>
+          </SwiperSlide>
       </Swiper>
     </div>
   )
