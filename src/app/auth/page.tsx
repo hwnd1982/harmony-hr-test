@@ -14,8 +14,6 @@ import {
 import { signIn } from "../actions";
 import { useFormState } from "react-dom";
 
-export const description =
-  "A simple login form with email and password. The submit button says 'Sign in'."
 
 export default function LoginForm() {
   const [state, formAction] = useFormState(signIn, undefined);
