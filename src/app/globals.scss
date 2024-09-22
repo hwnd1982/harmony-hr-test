@@ -75,6 +75,14 @@
     @apply border-border;
   }
   
+  html {
+    font-size: min(18px, calc(100vw / 360 * 16));
+    
+    @screen sm {
+      font-size: max(14px, min(18px, calc(100vw / 1440 * 16)));
+    }
+  }
+
   body {
     @apply text-black text-sm font-medium;
     font-feature-settings: "rlig" 1, "calt" 1;

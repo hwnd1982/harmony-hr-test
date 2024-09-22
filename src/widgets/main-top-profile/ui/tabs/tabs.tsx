@@ -31,7 +31,7 @@ export function Tabs({activeIndex, setActiveIndex}: TabsProps) {
         slidesPerView="auto"
         freeMode={true}
         watchSlidesProgress={true}
-        className="w-full -mr-4 [&.swiper]:overflow-visible"
+        className="w-[calc(100vw-3rem)] md:w-full md:-mr-4 [&.swiper]:overflow-visible"
         onClick={swiper => swiper.slideTo(swiper.clickedIndex, 300)}
       >
         {list.map(({title}, index) => (

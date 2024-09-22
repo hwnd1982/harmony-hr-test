@@ -19,7 +19,7 @@ export function HeaderProfile() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="secondary" size="icon" className="rounded-full w-[38px] h-[38px] overflow-hidden">
+        <Button variant="secondary" size="icon" className="rounded-full w-[2.375rem] h-[2.375rem] overflow-hidden">
           {!!profile?.avatar && <Image src={profile?.avatar} alt={profile?.name} width={38} height={38} className="h-full w-full object-contain block" />}
         </Button>
       </DropdownMenuTrigger>

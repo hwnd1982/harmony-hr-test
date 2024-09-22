@@ -8,7 +8,7 @@ export function Aside() {
   const profile = useAppStore(state => state.profile);
 
   return (
-    <aside className="grid gap-4 relative z-20">
+    <aside className="hidden md:grid gap-4 relative z-20">
       <Card>
         <CardContent className="flex flex-col gap-4">
           <a href="tel:07911654321" className="flex items-center gap-2 text-sm font-medium text-black hover:opacity-70">

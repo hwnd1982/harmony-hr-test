@@ -46,7 +46,7 @@ export function Header() {
           classActive="bg-blue"
         />
 
-        <div className="flex items-center gap-4 w-full md:max-w-[400px] md:gap-2 lg:gap-4">
+        <div className="flex items-center gap-4 w-full max-w-[25rem] md:gap-2 lg:gap-4">
           <form className="w-full flex-1 sm:flex-initial">
             <div className="relative w-full">
               <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
