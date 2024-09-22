@@ -8,7 +8,7 @@ export function MainCards() {
         slidesPerView="auto"
         freeMode={true}
         watchSlidesProgress={true}
-        className="[&.swiper]:-mr-4 [&.swiper]:md:-mr-12 [&.swiper]:overflow-visible"
+        className="[&.swiper]:-mr-4 [&.swiper]:lg:-mr-12 [&.swiper]:overflow-visible"
         onClick={swiper => swiper.slideTo(swiper.clickedIndex, 300)}
       >
         <SwiperSlide className="pr-4 lg:pr-12 max-w-[calc(100%/3)] min-w-[16.5rem]">
