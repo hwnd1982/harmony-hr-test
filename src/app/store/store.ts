@@ -14,6 +14,10 @@ export const useAppStore = create<AppStore>()(
       partialize: state => ({
         profile: state.profile,
       }),
+      skipHydration: true,
+      onRehydrateStorage: () => {
+        console.log("onRehydrateStorage");
+      },
     }
   )
 );

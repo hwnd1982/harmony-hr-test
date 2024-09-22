@@ -9,8 +9,6 @@ export function ProfileProvider({profile, children}: {profile: Profile | null, c
     useAppStore.getState().setProfile(profile);
   }, [profile]);
 
-  console.log(profile);
-
   return (
     <>
       {children}

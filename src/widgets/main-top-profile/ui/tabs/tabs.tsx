@@ -1,3 +1,5 @@
+'use client'
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Dispatch, SetStateAction } from 'react'
@@ -29,12 +31,13 @@ export function Tabs({activeIndex, setActiveIndex}: TabsProps) {
         slidesPerView="auto"
         freeMode={true}
         watchSlidesProgress={true}
-        className="w-full -mr-4"
+        className="w-full -mr-4 [&.swiper]:overflow-visible"
+        onClick={swiper => swiper.slideTo(swiper.clickedIndex, 300)}
       >
         {list.map(({title}, index) => (
           <SwiperSlide
             key={`tabs-trigger-${index}`}
-            className={cn('max-w-max pr-4')}
+            className={cn('max-w-max pr-4 [&.swiper]overflow-visible')}
             onClick={() => {setActiveIndex(index)}}
           >
             <Link href="#" className={cn('flex text-sm font-medium justify-center py-4 w-[90px] transition bg-blue rounded-t-lg', activeIndex === index && "bg-white")}>{title}</Link>
